@@ -1,0 +1,23 @@
+# system info float32_sqrt on 2022.09.26.21:01:56
+system_info:
+name,value
+DEVICE,1SX280HN2F43E2VG
+DEVICE_FAMILY,Stratix 10
+GENERATION_ID,0
+#
+#
+# Files generated for float32_sqrt on 2022.09.26.21:01:56
+files:
+filepath,kind,attributes,module,is_top
+sim/float32_sqrt.vhd,VHDL,CONTAINS_INLINE_CONFIGURATION,float32_sqrt,true
+altera_fp_functions_191/sim/float32_sqrt_altera_fp_functions_191_kdhujqq_memoryC1_uid65_sqrtTables_lutmem.hex,HEX,,float32_sqrt_altera_fp_functions_191_kdhujqq,false
+altera_fp_functions_191/sim/float32_sqrt_altera_fp_functions_191_kdhujqq_memoryC2_uid68_sqrtTables_lutmem.hex,HEX,,float32_sqrt_altera_fp_functions_191_kdhujqq,false
+altera_fp_functions_191/sim/float32_sqrt_altera_fp_functions_191_kdhujqq_memoryC0_uid62_sqrtTables_lutmem.hex,HEX,,float32_sqrt_altera_fp_functions_191_kdhujqq,false
+altera_fp_functions_191/sim/dspba_library_package.vhd,VHDL,,float32_sqrt_altera_fp_functions_191_kdhujqq,false
+altera_fp_functions_191/sim/dspba_library.vhd,VHDL,,float32_sqrt_altera_fp_functions_191_kdhujqq,false
+altera_fp_functions_191/sim/float32_sqrt_altera_fp_functions_191_kdhujqq.vhd,VHDL,,float32_sqrt_altera_fp_functions_191_kdhujqq,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+float32_sqrt.fp_functions_0,float32_sqrt_altera_fp_functions_191_kdhujqq

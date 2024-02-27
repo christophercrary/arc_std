@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altera_fp_functions_191/sim/dspba_library_package.vhd"
+   type="VHDL"
+   library="altera_fp_functions_191" />
+ <file
+   path="altera_fp_functions_191/sim/dspba_library.vhd"
+   type="VHDL"
+   library="altera_fp_functions_191" />
+ <file
+   path="altera_fp_functions_191/sim/float32_mult_altera_fp_functions_191_m24j6ty.vhd"
+   type="VHDL"
+   library="altera_fp_functions_191" />
+ <file
+   path="sim/float32_mult.vhd"
+   type="VHDL"
+   library="float32_mult"
+   hasInlineConfiguration="true" />
+ <topLevel name="float32_mult.float32_mult" />
+ <deviceFamily name="stratix10" />
+</simPackage>

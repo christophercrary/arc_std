@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altera_fp_functions_191/sim/dspba_library_package.vhd"
+   type="VHDL"
+   library="altera_fp_functions_191" />
+ <file
+   path="altera_fp_functions_191/sim/dspba_library.vhd"
+   type="VHDL"
+   library="altera_fp_functions_191" />
+ <file
+   path="altera_fp_functions_191/sim/float64_sub_altera_fp_functions_191_ml2y6qy.vhd"
+   type="VHDL"
+   library="altera_fp_functions_191" />
+ <file
+   path="sim/float64_sub.vhd"
+   type="VHDL"
+   library="float64_sub"
+   hasInlineConfiguration="true" />
+ <topLevel name="float64_sub.float64_sub" />
+ <deviceFamily name="stratix10" />
+</simPackage>

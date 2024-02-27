@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altera_fp_functions_191/sim/float32_div_altera_fp_functions_191_77egmta_memoryC1_uid149_invTables_lutmem.hex"
+   type="HEX"
+   library="altera_fp_functions_191" />
+ <file
+   path="altera_fp_functions_191/sim/float32_div_altera_fp_functions_191_77egmta_memoryC2_uid152_invTables_lutmem.hex"
+   type="HEX"
+   library="altera_fp_functions_191" />
+ <file
+   path="altera_fp_functions_191/sim/float32_div_altera_fp_functions_191_77egmta_memoryC0_uid146_invTables_lutmem.hex"
+   type="HEX"
+   library="altera_fp_functions_191" />
+ <file
+   path="altera_fp_functions_191/sim/dspba_library_package.vhd"
+   type="VHDL"
+   library="altera_fp_functions_191" />
+ <file
+   path="altera_fp_functions_191/sim/dspba_library.vhd"
+   type="VHDL"
+   library="altera_fp_functions_191" />
+ <file
+   path="altera_fp_functions_191/sim/float32_div_altera_fp_functions_191_77egmta.vhd"
+   type="VHDL"
+   library="altera_fp_functions_191" />
+ <file
+   path="sim/float32_div.vhd"
+   type="VHDL"
+   library="float32_div"
+   hasInlineConfiguration="true" />
+ <topLevel name="float32_div.float32_div" />
+ <deviceFamily name="stratix10" />
+</simPackage>

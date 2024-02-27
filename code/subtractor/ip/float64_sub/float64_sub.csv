@@ -1,0 +1,20 @@
+# system info float64_sub on 2022.09.26.20:59:02
+system_info:
+name,value
+DEVICE,1SX280HN2F43E2VG
+DEVICE_FAMILY,Stratix 10
+GENERATION_ID,0
+#
+#
+# Files generated for float64_sub on 2022.09.26.20:59:02
+files:
+filepath,kind,attributes,module,is_top
+sim/float64_sub.vhd,VHDL,CONTAINS_INLINE_CONFIGURATION,float64_sub,true
+altera_fp_functions_191/sim/dspba_library_package.vhd,VHDL,,float64_sub_altera_fp_functions_191_ml2y6qy,false
+altera_fp_functions_191/sim/dspba_library.vhd,VHDL,,float64_sub_altera_fp_functions_191_ml2y6qy,false
+altera_fp_functions_191/sim/float64_sub_altera_fp_functions_191_ml2y6qy.vhd,VHDL,,float64_sub_altera_fp_functions_191_ml2y6qy,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+float64_sub.fp_functions_0,float64_sub_altera_fp_functions_191_ml2y6qy

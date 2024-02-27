@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altera_fp_functions_191/sim/float32_sqrt_altera_fp_functions_191_kdhujqq_memoryC1_uid65_sqrtTables_lutmem.hex"
+   type="HEX"
+   library="altera_fp_functions_191" />
+ <file
+   path="altera_fp_functions_191/sim/float32_sqrt_altera_fp_functions_191_kdhujqq_memoryC2_uid68_sqrtTables_lutmem.hex"
+   type="HEX"
+   library="altera_fp_functions_191" />
+ <file
+   path="altera_fp_functions_191/sim/float32_sqrt_altera_fp_functions_191_kdhujqq_memoryC0_uid62_sqrtTables_lutmem.hex"
+   type="HEX"
+   library="altera_fp_functions_191" />
+ <file
+   path="altera_fp_functions_191/sim/dspba_library_package.vhd"
+   type="VHDL"
+   library="altera_fp_functions_191" />
+ <file
+   path="altera_fp_functions_191/sim/dspba_library.vhd"
+   type="VHDL"
+   library="altera_fp_functions_191" />
+ <file
+   path="altera_fp_functions_191/sim/float32_sqrt_altera_fp_functions_191_kdhujqq.vhd"
+   type="VHDL"
+   library="altera_fp_functions_191" />
+ <file
+   path="sim/float32_sqrt.vhd"
+   type="VHDL"
+   library="float32_sqrt"
+   hasInlineConfiguration="true" />
+ <topLevel name="float32_sqrt.float32_sqrt" />
+ <deviceFamily name="stratix10" />
+</simPackage>

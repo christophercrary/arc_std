@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2022.09.26.21:01:13"
+ outputDirectory="/home/UFAD/wespiard/git/gp/gp-devcloud/regression/code/hdl/components/arc/arc_std/square_root/ip/float64_sqrt/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Stratix 10"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="1SX280HN2F43E2VG"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="2"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="areset" kind="reset" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="areset" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="a" kind="conduit" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="areset" />
+   <property name="prSafe" value="false" />
+   <port name="a" direction="input" role="a" width="64" />
+  </interface>
+  <interface name="q" kind="conduit" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="q" direction="output" role="q" width="64" />
+  </interface>
+ </perimeter>
+ <entity kind="float64_sqrt" version="1.0" name="float64_sqrt">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="1SX280HN2F43E2VG" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Stratix 10" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <generatedFiles>
+   <file
+       path="/home/UFAD/wespiard/git/gp/gp-devcloud/regression/code/hdl/components/arc/arc_std/square_root/ip/float64_sqrt/synth/float64_sqrt.vhd"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/UFAD/wespiard/git/gp/gp-devcloud/regression/code/hdl/components/arc/arc_std/square_root/ip/float64_sqrt/synth/float64_sqrt.vhd"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/UFAD/wespiard/git/gp/gp-devcloud/regression/code/hdl/components/arc/arc_std/square_root/ip/float64_sqrt.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/tools/Intel/quartus_pro/19.2.0.57/ip/altera/dsp/altera_fp_functions/source/altera_fp_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="float64_sqrt">"Generating: float64_sqrt"</message>
+   <message level="Info" culprit="float64_sqrt">"Generating: float64_sqrt_altera_fp_functions_191_eshpdly"</message>
+   <message level="Info" culprit="fp_functions_0">/tools/Intel/quartus_pro/19.2.0.57/ip/altera/dsp/altera_fp_functions/source//cmdPolyEval.sh /tools/Intel/quartus_pro/19.2.0.57/quartus/dspba/backend/linux64 -target Stratix10 -frequency 350 -name float64_sqrt_altera_fp_functions_191_eshpdly -noChanValid -enableHardFP 1 -printMachineReadable -lang VHDL -speedgrade 2 FPSqrt 11 52</message>
+   <message level="Info" culprit="fp_functions_0">Latency on Stratix 10 is 44 cycles</message>
+   <message level="Info" culprit="fp_functions_0">DSP Blocks Used: 16</message>
+   <message level="Info" culprit="fp_functions_0">LUTs Used: 1133</message>
+   <message level="Info" culprit="fp_functions_0">Memory Bits Used: 56320</message>
+   <message level="Info" culprit="fp_functions_0">Memory Blocks Used: 8</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_fp_functions"
+   version="19.1"
+   name="float64_sqrt_altera_fp_functions_191_eshpdly">
+  <parameter name="fp_man" value="23" />
+  <parameter name="gen_enable" value="false" />
+  <parameter name="fp_exp_derived" value="11" />
+  <parameter name="use_rounding_mode" value="false" />
+  <parameter name="fp_in_exp" value="8" />
+  <parameter name="validation_failed" value="false" />
+  <parameter name="fxpt_width" value="32" />
+  <parameter name="manual_dsp_planning" value="true" />
+  <parameter name="force_elaborate" value="0" />
+  <parameter name="EXP_LOG_function" value="EXPE" />
+  <parameter name="fp_format" value="double" />
+  <parameter name="fp_out_man_derived" value="8" />
+  <parameter name="latency_target" value="2" />
+  <parameter name="frequency_target" value="350" />
+  <parameter name="number_of_inputs" value="2" />
+  <parameter name="fp_in_format" value="single" />
+  <parameter name="select_signal_enable" value="false" />
+  <parameter name="derivedfunction" value="SQRT" />
+  <parameter name="scale_by_pi" value="false" />
+  <parameter name="TRIG_function" value="SIN" />
+  <parameter name="performance_goal" value="frequency" />
+  <parameter name="frequency_feedback" value="0" />
+  <parameter name="fp_out_man" value="23" />
+  <parameter
+     name="rounding_mode_derived"
+     value="nearest with tie breaking away from zero" />
+  <parameter name="fp_in_man_derived" value="8" />
+  <parameter name="faithful_rounding" value="false" />
+  <parameter name="rounding_mode" value="nearest with tie breaking away from zero" />
+  <parameter name="fp_man_derived" value="52" />
+  <parameter name="fp_in_man" value="23" />
+  <parameter name="selected_device_family" value="Stratix 10" />
+  <parameter name="fp_exp" value="8" />
+  <parameter name="fp_out_exp_derived" value="8" />
+  <parameter name="ALL_function" value="ADD" />
+  <parameter name="trig_no_range_reduction" value="false" />
+  <parameter name="divide_type" value="0" />
+  <parameter name="forceRegisters" value="1111" />
+  <parameter name="enable_hard_fp" value="true" />
+  <parameter name="ARITH_function" value="ADD" />
+  <parameter name="fp_out_format" value="single" />
+  <parameter name="fxpt_fraction" value="0" />
+  <parameter name="fxpt_sign" value="1" />
+  <parameter name="selected_device_speedgrade" value="2" />
+  <parameter name="CONVERT_function" value="FXP_FP" />
+  <parameter name="report_resources_to_xml" value="false" />
+  <parameter name="latency_feedback" value="44" />
+  <parameter name="fp_in_exp_derived" value="8" />
+  <parameter name="COMPARE_function" value="MIN" />
+  <parameter name="FUNCTION_FAMILY" value="ROOTS" />
+  <parameter name="fp_out_exp" value="8" />
+  <parameter name="ROOTS_function" value="SQRT" />
+  <parameter name="exponent_width" value="23" />
+  <generatedFiles>
+   <file
+       path="/home/UFAD/wespiard/git/gp/gp-devcloud/regression/code/hdl/components/arc/arc_std/square_root/ip/float64_sqrt/altera_fp_functions_191/synth/float64_sqrt_altera_fp_functions_191_eshpdly_memoryC2_uid70_sqrtTables_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/UFAD/wespiard/git/gp/gp-devcloud/regression/code/hdl/components/arc/arc_std/square_root/ip/float64_sqrt/altera_fp_functions_191/synth/float64_sqrt_altera_fp_functions_191_eshpdly_memoryC5_uid79_sqrtTables_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/UFAD/wespiard/git/gp/gp-devcloud/regression/code/hdl/components/arc/arc_std/square_root/ip/float64_sqrt/altera_fp_functions_191/synth/float64_sqrt_altera_fp_functions_191_eshpdly_memoryC1_uid67_sqrtTables_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/UFAD/wespiard/git/gp/gp-devcloud/regression/code/hdl/components/arc/arc_std/square_root/ip/float64_sqrt/altera_fp_functions_191/synth/float64_sqrt_altera_fp_functions_191_eshpdly_memoryC4_uid76_sqrtTables_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/UFAD/wespiard/git/gp/gp-devcloud/regression/code/hdl/components/arc/arc_std/square_root/ip/float64_sqrt/altera_fp_functions_191/synth/float64_sqrt_altera_fp_functions_191_eshpdly_memoryC0_uid62_sqrtTables_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/UFAD/wespiard/git/gp/gp-devcloud/regression/code/hdl/components/arc/arc_std/square_root/ip/float64_sqrt/altera_fp_functions_191/synth/float64_sqrt_altera_fp_functions_191_eshpdly_memoryC3_uid73_sqrtTables_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/UFAD/wespiard/git/gp/gp-devcloud/regression/code/hdl/components/arc/arc_std/square_root/ip/float64_sqrt/altera_fp_functions_191/synth/float64_sqrt_altera_fp_functions_191_eshpdly_memoryC1_uid66_sqrtTables_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/UFAD/wespiard/git/gp/gp-devcloud/regression/code/hdl/components/arc/arc_std/square_root/ip/float64_sqrt/altera_fp_functions_191/synth/float64_sqrt_altera_fp_functions_191_eshpdly_memoryC0_uid63_sqrtTables_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/UFAD/wespiard/git/gp/gp-devcloud/regression/code/hdl/components/arc/arc_std/square_root/ip/float64_sqrt/altera_fp_functions_191/synth/dspba_library_package.vhd"
+       attributes="" />
+   <file
+       path="/home/UFAD/wespiard/git/gp/gp-devcloud/regression/code/hdl/components/arc/arc_std/square_root/ip/float64_sqrt/altera_fp_functions_191/synth/dspba_library.vhd"
+       attributes="" />
+   <file
+       path="/home/UFAD/wespiard/git/gp/gp-devcloud/regression/code/hdl/components/arc/arc_std/square_root/ip/float64_sqrt/altera_fp_functions_191/synth/float64_sqrt_altera_fp_functions_191_eshpdly.vhd"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/UFAD/wespiard/git/gp/gp-devcloud/regression/code/hdl/components/arc/arc_std/square_root/ip/float64_sqrt/altera_fp_functions_191/synth/float64_sqrt_altera_fp_functions_191_eshpdly_memoryC2_uid70_sqrtTables_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/UFAD/wespiard/git/gp/gp-devcloud/regression/code/hdl/components/arc/arc_std/square_root/ip/float64_sqrt/altera_fp_functions_191/synth/float64_sqrt_altera_fp_functions_191_eshpdly_memoryC5_uid79_sqrtTables_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/UFAD/wespiard/git/gp/gp-devcloud/regression/code/hdl/components/arc/arc_std/square_root/ip/float64_sqrt/altera_fp_functions_191/synth/float64_sqrt_altera_fp_functions_191_eshpdly_memoryC1_uid67_sqrtTables_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/UFAD/wespiard/git/gp/gp-devcloud/regression/code/hdl/components/arc/arc_std/square_root/ip/float64_sqrt/altera_fp_functions_191/synth/float64_sqrt_altera_fp_functions_191_eshpdly_memoryC4_uid76_sqrtTables_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/UFAD/wespiard/git/gp/gp-devcloud/regression/code/hdl/components/arc/arc_std/square_root/ip/float64_sqrt/altera_fp_functions_191/synth/float64_sqrt_altera_fp_functions_191_eshpdly_memoryC0_uid62_sqrtTables_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/UFAD/wespiard/git/gp/gp-devcloud/regression/code/hdl/components/arc/arc_std/square_root/ip/float64_sqrt/altera_fp_functions_191/synth/float64_sqrt_altera_fp_functions_191_eshpdly_memoryC3_uid73_sqrtTables_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/UFAD/wespiard/git/gp/gp-devcloud/regression/code/hdl/components/arc/arc_std/square_root/ip/float64_sqrt/altera_fp_functions_191/synth/float64_sqrt_altera_fp_functions_191_eshpdly_memoryC1_uid66_sqrtTables_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/UFAD/wespiard/git/gp/gp-devcloud/regression/code/hdl/components/arc/arc_std/square_root/ip/float64_sqrt/altera_fp_functions_191/synth/float64_sqrt_altera_fp_functions_191_eshpdly_memoryC0_uid63_sqrtTables_lutmem.hex"
+       attributes="" />
+   <file
+       path="/home/UFAD/wespiard/git/gp/gp-devcloud/regression/code/hdl/components/arc/arc_std/square_root/ip/float64_sqrt/altera_fp_functions_191/synth/dspba_library_package.vhd"
+       attributes="" />
+   <file
+       path="/home/UFAD/wespiard/git/gp/gp-devcloud/regression/code/hdl/components/arc/arc_std/square_root/ip/float64_sqrt/altera_fp_functions_191/synth/dspba_library.vhd"
+       attributes="" />
+   <file
+       path="/home/UFAD/wespiard/git/gp/gp-devcloud/regression/code/hdl/components/arc/arc_std/square_root/ip/float64_sqrt/altera_fp_functions_191/synth/float64_sqrt_altera_fp_functions_191_eshpdly.vhd"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/tools/Intel/quartus_pro/19.2.0.57/ip/altera/dsp/altera_fp_functions/source/altera_fp_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="float64_sqrt" as="fp_functions_0" />
+  <messages>
+   <message level="Info" culprit="float64_sqrt">"Generating: float64_sqrt_altera_fp_functions_191_eshpdly"</message>
+   <message level="Info" culprit="fp_functions_0">/tools/Intel/quartus_pro/19.2.0.57/ip/altera/dsp/altera_fp_functions/source//cmdPolyEval.sh /tools/Intel/quartus_pro/19.2.0.57/quartus/dspba/backend/linux64 -target Stratix10 -frequency 350 -name float64_sqrt_altera_fp_functions_191_eshpdly -noChanValid -enableHardFP 1 -printMachineReadable -lang VHDL -speedgrade 2 FPSqrt 11 52</message>
+   <message level="Info" culprit="fp_functions_0">Latency on Stratix 10 is 44 cycles</message>
+   <message level="Info" culprit="fp_functions_0">DSP Blocks Used: 16</message>
+   <message level="Info" culprit="fp_functions_0">LUTs Used: 1133</message>
+   <message level="Info" culprit="fp_functions_0">Memory Bits Used: 56320</message>
+   <message level="Info" culprit="fp_functions_0">Memory Blocks Used: 8</message>
+  </messages>
+ </entity>
+</deploy>
