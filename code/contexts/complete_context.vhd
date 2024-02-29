@@ -37,13 +37,5 @@ context complete_context is
   use arc_std.accumulator_pkg;
   use arc_std.accumulator_pkg.all;
   use arc_std.multiply_accumulator_pkg;
-  use arc_std.tuple_modifier_pkg;
-  use arc_std.tuple_modifier_pkg.all;
-  use arc_std.function_input_modifier_pkg;
-  use arc_std.function_input_modifier_pkg.all;
-  use arc_std.function_output_modifier_pkg;
-  use arc_std.function_output_modifier_pkg.all;
-  use arc_std.function_complete_modifier_pkg;
-  use arc_std.function_complete_modifier_pkg.all;
   
 end context;
